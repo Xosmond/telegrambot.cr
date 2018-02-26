@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/Xosmond/telegrambot.cr">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/doc.js"></script>
+  <title>README - github.com/Xosmond/telegrambot.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li class="current"><a href="index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot" data-name="telegrambot">
+      <a href="Telegrambot.html">Telegrambot</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Api" data-name="telegrambot::api">
+      <a href="Telegrambot/Api.html">Api</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/ChatMessage" data-name="telegrambot::chatmessage">
+      <a href="Telegrambot/ChatMessage.html">ChatMessage</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Exceptions" data-name="telegrambot::exceptions">
+      <a href="Telegrambot/Exceptions.html">Exceptions</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Exceptions/ResponseError" data-name="telegrambot::exceptions::responseerror">
+      <a href="Telegrambot/Exceptions/ResponseError.html">ResponseError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/FromMessage" data-name="telegrambot::frommessage">
+      <a href="Telegrambot/FromMessage.html">FromMessage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Message" data-name="telegrambot::message">
+      <a href="Telegrambot/Message.html">Message</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1>telegrambot</h1>
+
+<p><a href="https://travis-ci.org/Xosmond/telegrambot.cr" target="_blank"><img src="https://travis-ci.org/Xosmond/telegrambot.cr.svg?branch=master" alt="Build Status"/></a></p>
+
+<p>Crystal wrapper for <a href="https://core.telegram.org/bots/api" target="_blank">Telegram's Bot API</a>.</p>
+
+<h2>Installation</h2>
+
+<p>Add this to your application's <code>shard.yml</code>:</p>
+
+<pre><code class='language-yaml'>dependencies:
+  telegrambot:
+    github: xosmond/telegrambot</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code class='language-shell'>$ shards install</code></pre>
+
+<h2>Usage</h2>
+
+<p>First things first, you need to <a href="https://core.telegram.org/bots#botfather" target="_blank">obtain a token</a> for your bot. Then create your Telegram bot like this:</p>
+
+<pre><code class='language-crystal'><span class="k">require</span> <span class="s">&quot;telegrambot&quot;</span>
+
+token <span class="o">=</span> <span class="s">&quot;YOUR_TELEGRAM_BOT_API_TOKEN&quot;</span>
+bot <span class="o">=</span> <span class="t">Telegrambot</span><span class="t">::</span><span class="t">Api</span>.<span class="k">new</span> token
+bot.listen(<span class="n">0</span>) <span class="k">do</span> <span class="o">|</span>message<span class="o">|</span>
+  <span class="k">case</span> message.text
+  <span class="k">when</span> <span class="s">&quot;/start&quot;</span>
+    bot.send_message(chat_id: message.chat.id, message: <span class="s">&quot;Hello, </span><span class="i">#{</span></span>message.from.first_name<span class="s"><span class="i">}</span>&quot;</span>)
+  <span class="k">when</span> <span class="s">&quot;/stop&quot;</span>
+    bot.send_message(chat_id: message.chat.id, message: <span class="s">&quot;Bye, </span><span class="i">#{</span></span>message.from.first_name<span class="s"><span class="i">}</span>&quot;</span>)
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<p>Note that <code><a href="Telegrambot/Api.html">Telegrambot::Api</a></code> only implements <code>send_message</code>, <code>get_updates</code> and <code>listen</code> for continues updates. As you can see methods are implemented with the <em>snake_case</em> notation.</p>
+
+<p>About <code>message</code> object - it implements only the mandatory data, for extra data, you can make a PR.</p>
+
+<h2>Documentation</h2>
+
+<ul><li><a href="https://xosmond.github.io/telegrambot.cr/" target="_blank">Standard library API</a></li></ul>
+
+<h2>Development</h2>
+
+<ul><li>[x] Basic API for recieve and send messages</li><li>Complete Message object for access all possible data</li><li>Logging</li><li>Webhooks</li><li>File uploads</li><li>Custom keyboards</li></ul>
+
+<h2>Contributing</h2>
+
+<ol><li>Fork it ( https://github.com/xosmond/telegrambot/fork )</li><li>Create your feature branch (git checkout -b my-new-feature)</li><li>Commit your changes (git commit -am 'Add some feature')</li><li>Push to the branch (git push origin my-new-feature)</li><li>Create a new Pull Request</li></ol>
+
+<h2>Contributors</h2>
+
+<ul><li><a href="https://github.com/xosmond" target="_blank">xosmond</a> Jordano Moscoso - creator, maintainer</li></ul>
+</div>
+</body>
+</html>

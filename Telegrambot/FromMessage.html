@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/Xosmond/telegrambot.cr">
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/doc.js"></script>
+  <title>Telegrambot::FromMessage - github.com/Xosmond/telegrambot.cr</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/Xosmond/telegrambot.cr/Telegrambot" data-name="telegrambot">
+      <a href="../Telegrambot.html">Telegrambot</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Api" data-name="telegrambot::api">
+      <a href="../Telegrambot/Api.html">Api</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/ChatMessage" data-name="telegrambot::chatmessage">
+      <a href="../Telegrambot/ChatMessage.html">ChatMessage</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Exceptions" data-name="telegrambot::exceptions">
+      <a href="../Telegrambot/Exceptions.html">Exceptions</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Exceptions/ResponseError" data-name="telegrambot::exceptions::responseerror">
+      <a href="../Telegrambot/Exceptions/ResponseError.html">ResponseError</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/FromMessage" data-name="telegrambot::frommessage">
+      <a href="../Telegrambot/FromMessage.html">FromMessage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/Xosmond/telegrambot.cr/Telegrambot/Message" data-name="telegrambot::message">
+      <a href="../Telegrambot/Message.html">Message</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Telegrambot::FromMessage
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Telegrambot/FromMessage.html">Telegrambot::FromMessage</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L2" target="_blank">telegrambot/from_message.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28json%3AJSON%3A%3AAny%29-class-method" class="signature"><strong>.new</strong>(json : JSON::Any)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#first_name%3AString-instance-method" class="signature"><strong>#first_name</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#id%3AInt64-instance-method" class="signature"><strong>#id</strong> : Int64</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#is_bot%3ABool-instance-method" class="signature"><strong>#is_bot</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#language_code%3AString-instance-method" class="signature"><strong>#language_code</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#last_name%3AString-instance-method" class="signature"><strong>#last_name</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#username%3AString-instance-method" class="signature"><strong>#username</strong> : String</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new(json:JSON::Any)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(json : JSON::Any)
+
+        <a class="method-permalink" href="#new%28json%3AJSON%3A%3AAny%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="first_name:String-instance-method">
+      <div class="signature">
+        
+        def <strong>first_name</strong> : String
+
+        <a class="method-permalink" href="#first_name%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L5" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="id:Int64-instance-method">
+      <div class="signature">
+        
+        def <strong>id</strong> : Int64
+
+        <a class="method-permalink" href="#id%3AInt64-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L3" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="is_bot:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>is_bot</strong> : Bool
+
+        <a class="method-permalink" href="#is_bot%3ABool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L4" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="language_code:String-instance-method">
+      <div class="signature">
+        
+        def <strong>language_code</strong> : String
+
+        <a class="method-permalink" href="#language_code%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L8" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="last_name:String-instance-method">
+      <div class="signature">
+        
+        def <strong>last_name</strong> : String
+
+        <a class="method-permalink" href="#last_name%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L6" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="username:String-instance-method">
+      <div class="signature">
+        
+        def <strong>username</strong> : String
+
+        <a class="method-permalink" href="#username%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/Xosmond/telegrambot.cr/blob/2cb845e78928ae004c7bcede471cd4fd1f89dcc4/src/telegrambot/from_message.cr#L7" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
