@@ -1,0 +1,9 @@
+name: telegrambot
+version: 0.1.0
+
+authors:
+  - Jordano Moscoso <jor_notes@outlook.com>
+
+crystal: 0.24.1
+
+license: MIT
