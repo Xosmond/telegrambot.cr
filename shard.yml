@@ -1,9 +1,13 @@
 name: telegrambot
 version: 0.1.0
-
+description: Crystal wrapper for Telegram's Bot API
 authors:
   - Jordano Moscoso <jor_notes@outlook.com>
 
 crystal: 0.24.1
 
 license: MIT
+
+development_dependencies:
+  dotenv:
+    github: gdotdesign/cr-dotenv
