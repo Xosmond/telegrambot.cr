@@ -1,5 +1,5 @@
 # telegrambot
-[![Build Status](https://travis-ci.org/xosmond/telegrambot.cr.svg?branch=master)](https://travis-ci.org/xosmond/telegrambot.cr)
+[![Build Status](https://travis-ci.org/Xosmond/telegrambot.cr.svg?branch=master)](https://travis-ci.org/Xosmond/telegrambot.cr)
 
 Crystal wrapper for [Telegram's Bot API](https://core.telegram.org/bots/api).
 
@@ -42,6 +42,9 @@ Note that `Telegrambot::Api` only implements `send_message`, `get_updates` and `
 
 About `message` object - it implements only the mandatory data, for extra data, you can make a PR.
 
+## Documentation
+
+* [Standard library API](https://xosmond.github.io/telegrambot.cr/)
 
 ## Development
 
