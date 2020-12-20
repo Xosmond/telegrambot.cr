@@ -10,7 +10,7 @@ module Telegrambot
       @id = @json["message_id"].as_i64
       @from = Telegrambot::FromMessage.new(@json["from"])
       @chat = Telegrambot::ChatMessage.new(@json["chat"])
-      @date = Time.new seconds: @json["date"].as_i64, nanoseconds: 0, kind: Time::Kind::Local
+      @date = Time.new seconds: @json["date"].as_i64, nanoseconds: 0, location: Time::Location.local
       @text = @json["text"].as_s
     end
   end

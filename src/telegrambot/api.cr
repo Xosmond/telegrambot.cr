@@ -50,7 +50,7 @@ module Telegrambot
     def get_updates(offset : Int)
       json = call(get_path("/getUpdates"), {offset: offset.to_s})
       if json["ok"].as_bool
-        json_messages = json["result"]
+        json_messages = json["result"].as_a
         messages = [] of Telegrambot::Message
         json_messages.each do |json_message|
           messages << Telegrambot::Message.new(json_message["message"])
