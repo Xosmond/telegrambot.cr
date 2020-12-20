@@ -4,7 +4,7 @@ description: Crystal wrapper for Telegram's Bot API
 authors:
   - Jordano Moscoso <jor_notes@outlook.com>
 
-crystal: 0.24.1
+crystal: 0.35.1
 
 license: MIT
 
